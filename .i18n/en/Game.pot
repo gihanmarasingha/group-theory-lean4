@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun May 19 15:38:03 2024\n"
+"POT-Creation-Date: Sun May 19 17:21:00 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -126,8 +126,8 @@ msgid "Left inverse"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
-msgid "The left inverse `a⁻¹` of an element `a` satisfies the property that `a⁻¹ * a = 1`. This property\n"
-"is `mul_left_inv`, the left multiplicative inverse.\n"
+msgid "The left inverse $a^{-1}$ of a group element $a$ satisfies the property that $a^{-1} * a = 1$.\n"
+"This property is `mul_left_inv`, the left multiplicative inverse.\n"
 "\n"
 "*Note* to enter `⁻¹` in Lean, type `\\-1`."
 msgstr ""
@@ -137,7 +137,7 @@ msgid "`mul_left_inv` is a proof that `a⁻¹ * a = 1`"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
-msgid "Let $a, b, c$ be elements of $G$. Show that $(a⁻¹ * (b⁻¹ * b)) * a = 1 $."
+msgid "Let $a, b, c$ be elements of $G$. Show that $(a^{-1} * (b^{-1} * b)) * a = 1 $."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
@@ -150,7 +150,8 @@ msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
-msgid "Almost there. Just one more property!"
+msgid "Excellent. You've now seen all the defining properties of a group. In future levels, we'll build\n"
+"on these properties to prove more results."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L05_unique_identity
@@ -213,13 +214,14 @@ msgid "Inverse of inverse"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L06_inv_inv
-msgid "In this level, you'll use a `calc` proof to show `a⁻¹⁻¹ = a`, for every\n"
-"`a` in a group $G$.\n"
+msgid "In this level, you'll use a `calc` proof to show $(a^{-1})^{-1} = a$, for every\n"
+"$a$ in a group $G$.\n"
 "\n"
 "**Remember** enter `\\-1` to produce `⁻¹`.\n"
 "\n"
-"In each line `_ = sorry := by sorry`, replace the first sorry with an\n"
-"expression and the second sorry with a rewrite proof."
+"You will need to add more lines of the calculation. Each line should take the form\n"
+"`_ = expr := by rw [fact]`, where `fact` is the name of the definition or theorem you are using\n"
+"and `expr` is some mathematical expression."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L06_inv_inv
@@ -230,11 +232,41 @@ msgid "`inv_inv (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L06_inv_inv
-msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
-"$b * a = a$. Call this assumption $h$. Then $b = 1$."
+msgid "For every eleement $a$ in a group $G$, we have $(a^{-1})^{-1} = a$."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L06_inv_inv
+msgid "Excellent!"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_mul_right_inv
+msgid "Right inverse"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_mul_right_inv
+msgid "We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a^{-1} = 1$.\n"
+"\n"
+"Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
+"To complete the proof, fill in the `sorry` placeholders.\n"
+"\n"
+"```\n"
+"calc\n"
+"  a * a⁻¹ = sorry   := by sorry\n"
+"  _ = 1         := by sorry\n"
+"```"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_mul_right_inv
+msgid "`mul_right_inv (a : G)` is the proof that `a * a⁻¹ = 1`.\n"
+"\n"
+"This is right inverse property"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_mul_right_inv
+msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L07_mul_right_inv
 msgid "Excellent!"
 msgstr ""
 

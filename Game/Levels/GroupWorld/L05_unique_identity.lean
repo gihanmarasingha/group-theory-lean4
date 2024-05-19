@@ -49,7 +49,7 @@ namespace MyGroup
 
 open Group
 
-variable (G : Type) [Group G]
+variable {G : Type} [Group G]
 
 
 /--

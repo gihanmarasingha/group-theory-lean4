@@ -7,8 +7,8 @@ Level 4
 Title "Left inverse"
 
 Introduction "
-The left inverse `a⁻¹` of an element `a` satisfies the property that `a⁻¹ * a = 1`. This property
-is `mul_left_inv`, the left multiplicative inverse.
+The left inverse $a^{-1}$ of a group element $a$ satisfies the property that $a^{-1} * a = 1$.
+This property is `mul_left_inv`, the left multiplicative inverse.
 
 *Note* to enter `⁻¹` in Lean, type `\\-1`.
 "
@@ -23,9 +23,9 @@ namespace MyGroup
 
 open Group
 
-variable (G : Type) [Group G]
+variable {G : Type} [Group G]
 
-/-- Let $a, b, c$ be elements of $G$. Show that $(a⁻¹ * (b⁻¹ * b)) * a = 1 $. -/
+/-- Let $a, b, c$ be elements of $G$. Show that $(a^{-1} * (b^{-1} * b)) * a = 1 $. -/
 Statement (a b : G) : (a⁻¹ * (b⁻¹ * b)) * a = 1 := by
   Hint (hidden := true) "Try rewriting with `mul_left_inv`"
   rw [mul_left_inv]
@@ -35,7 +35,8 @@ Statement (a b : G) : (a⁻¹ * (b⁻¹ * b)) * a = 1 := by
   rw [mul_left_inv]
 
 Conclusion "
-Almost there. Just one more property!
+Excellent. You've now seen all the defining properties of a group. In future levels, we'll build
+on these properties to prove more results.
 "
 
 end MyGroup

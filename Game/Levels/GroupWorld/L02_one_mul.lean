@@ -21,7 +21,7 @@ namespace MyGroup
 
 open Group
 
-variable (G : Type) [Group G]
+variable {G : Type} [Group G]
 
 /-- Let $a$ be an element of $G$. Show that $1 * (a * 1) = a$. -/
 Statement (a : G) : 1 * (a * 1) = a := by

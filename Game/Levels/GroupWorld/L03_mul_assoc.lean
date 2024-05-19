@@ -23,7 +23,7 @@ namespace MyGroup
 
 open Group
 
-variable (G : Type) [Group G]
+variable {G : Type} [Group G]
 
 /-- Let $a, b, c$ be elements of $G$. Show that $(a * b) * (b * c) = (a * (b * b)) * c$. -/
 Statement (a b c : G) : (a * b) * (b * c) = (a * (b * b)) * c := by

@@ -15,9 +15,9 @@ is the theorem that $(a*b)*c = a*(b*c)$.
 
 Note that Lean will write `(a * b) * c` as `a * b * c` to minimise the use of brackets.
 -/
-TheoremDoc MyGroup.Group.mul_assoc as "mul_assoc" in "GroupWorld"
+DefinitionDoc MyGroup.Group.mul_assoc as "mul_assoc"
 
-NewTheorem MyGroup.Group.mul_assoc
+NewDefinition MyGroup.Group.mul_assoc
 
 namespace MyGroup
 

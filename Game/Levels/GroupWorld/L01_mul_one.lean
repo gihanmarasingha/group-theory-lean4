@@ -30,9 +30,9 @@ namespace MyGroup
 
 /-- `mul_one` is a proof that `a * 1 = a`
 -/
-TheoremDoc MyGroup.Group.mul_one as "mul_one" in "GroupWorld"
+DefinitionDoc MyGroup.Group.mul_one as "mul_one"
 
-NewTheorem MyGroup.Group.mul_one
+NewDefinition MyGroup.Group.mul_one
 
 open Group
 

@@ -15,9 +15,9 @@ is `mul_left_inv`, the left multiplicative inverse.
 
 /-- `mul_left_inv` is a proof that `a⁻¹ * a = 1`
 -/
-TheoremDoc MyGroup.Group.mul_left_inv as "mul_left_inv" in "GroupWorld"
+DefinitionDoc MyGroup.Group.mul_left_inv as "mul_left_inv"
 
-NewTheorem MyGroup.Group.mul_left_inv
+NewDefinition MyGroup.Group.mul_left_inv
 
 namespace MyGroup
 

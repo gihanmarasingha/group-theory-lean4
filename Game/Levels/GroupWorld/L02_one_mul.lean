@@ -13,9 +13,9 @@ introduce the property that $1 * a = a$, for every $a$ in $G$.
 
 /-- `one_mul` is a proof that `1 * a = a`
 -/
-TheoremDoc MyGroup.Group.one_mul as "one_mul" in "GroupWorld"
+DefinitionDoc MyGroup.Group.one_mul as "one_mul"
 
-NewTheorem MyGroup.Group.one_mul
+NewDefinition MyGroup.Group.one_mul
 
 namespace MyGroup
 

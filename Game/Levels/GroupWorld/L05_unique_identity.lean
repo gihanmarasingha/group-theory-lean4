@@ -51,17 +51,24 @@ open Group
 
 variable (G : Type) [Group G]
 
+
+/--
+`eq_one_of_self_mul_eq (b : G) h` is the proof of `b = 1` if `h` is the hypothesis
+`h :  ∀ (a : G), b * a = a`.
+
+This is uniqueness of (left) identity in a group.
+-/
+TheoremDoc MyGroup.eq_one_of_self_mul_eq as "eq_one_of_self_mul_eq" in "GroupWorld"
+
 /-- Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that
 $b * a = a$. Call this assumption $h$. Then $b = 1$. -/
-Statement (b : G) (h : ∀ (a : G), b * a = a) : b = 1 := by
-  Hint (hidden := true) "blah"
-
+Statement eq_one_of_self_mul_eq (b : G) (h : ∀ (a : G), b * a = a) : b = 1 := by
   Template
     calc
       b = b * 1 := by Hole rw [mul_one]
       _ = 1     := by Hole rw [h]
 Conclusion "
-Almost there. Just one more property!
+Well done!
 "
 
 end MyGroup

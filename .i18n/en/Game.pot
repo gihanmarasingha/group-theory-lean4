@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun May 19 15:01:49 2024\n"
+"POT-Creation-Date: Sun May 19 15:38:03 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -193,16 +193,49 @@ msgid "`Hole` for internal use"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L05_unique_identity
+msgid "`eq_one_of_self_mul_eq (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
+"`h :  ∀ (a : G), b * a = a`.\n"
+"\n"
+"This is uniqueness of (left) identity in a group."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
 msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
 "$b * a = a$. Call this assumption $h$. Then $b = 1$."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L05_unique_identity
-msgid "blah"
+msgid "Well done!"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
-msgid "Almost there. Just one more property!"
+#: Game.Levels.GroupWorld.L06_inv_inv
+msgid "Inverse of inverse"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L06_inv_inv
+msgid "In this level, you'll use a `calc` proof to show `a⁻¹⁻¹ = a`, for every\n"
+"`a` in a group $G$.\n"
+"\n"
+"**Remember** enter `\\-1` to produce `⁻¹`.\n"
+"\n"
+"In each line `_ = sorry := by sorry`, replace the first sorry with an\n"
+"expression and the second sorry with a rewrite proof."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L06_inv_inv
+msgid "`inv_inv (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
+"`h :  ∀ (a : G), b * a = a`.\n"
+"\n"
+"This is uniqueness of (left) identity in a group."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L06_inv_inv
+msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
+"$b * a = a$. Call this assumption $h$. Then $b = 1$."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L06_inv_inv
+msgid "Excellent!"
 msgstr ""
 
 #: Game.Levels.GroupWorld

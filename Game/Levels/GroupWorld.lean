@@ -3,6 +3,7 @@ import Game.Levels.GroupWorld.L02_one_mul
 import Game.Levels.GroupWorld.L03_mul_assoc
 import Game.Levels.GroupWorld.L04_mul_left_inv
 import Game.Levels.GroupWorld.L05_unique_identity
+import Game.Levels.GroupWorld.L06_inv_inv
 
 World "GroupWorld"
 Title "Group Theory World"

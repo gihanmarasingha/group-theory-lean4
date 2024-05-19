@@ -1,4 +1,5 @@
 import GameServer.Commands
+import Game.Metadata
 
 import Game.MyGroup.Definition
 
@@ -25,14 +26,13 @@ TacticDoc rw
 
 NewTactic rw
 
+namespace MyGroup
 
 /-- `mul_one` is a proof that `a * 1 = a`
 -/
 TheoremDoc MyGroup.Group.mul_one as "mul_one" in "GroupWorld"
 
 NewTheorem MyGroup.Group.mul_one
-
-namespace MyGroup
 
 open Group
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun May 19 10:30:27 2024\n"
+"POT-Creation-Date: Sun May 19 15:01:49 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -137,7 +137,7 @@ msgid "`mul_left_inv` is a proof that `a⁻¹ * a = 1`"
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
-msgid "Let $a, b, c$ be elements of $G$. Show that $(a * b) * (b⁻¹ * a⁻¹) = 1$."
+msgid "Let $a, b, c$ be elements of $G$. Show that $(a⁻¹ * (b⁻¹ * b)) * a = 1 $."
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
@@ -150,6 +150,58 @@ msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an
 msgstr ""
 
 #: Game.Levels.GroupWorld.L04_mul_left_inv
+msgid "Almost there. Just one more property!"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "Uniqueness of identity"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "We'll show that the identity is unique. That is, we'll prove:\n"
+"\n"
+"**Theorem** Suppose $b$ is an element of $G$ such that $b * a = a$,\n"
+"for every $a$ in $G$. Then $b = 1$.\n"
+"\n"
+"We'll use the following 'traditional' mathematics proof as a template.\n"
+"\n"
+"**Proof**\n"
+"$$\n"
+"\\begin{align*}\n"
+"b & = b * 1 && [\\text{by identity property}] \\\\\n"
+"  & = 1.     && [\\text{by the hypothesis}]\n"
+"\\end{align*}\n"
+"$$\n"
+"\n"
+"You'll work on the entire proof file in this level, rather than writing a proof\n"
+"a line-at-a-time. In the pane on the right, replace each `sorry` with an appropriate\n"
+"rewrite.\n"
+"\n"
+"*Note* to rewrite with the hypothesis `h`, use `rw [h]`."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "`calc` is used to write a 'calculation-style' proof"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "`Template` for internal use"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "`Hole` for internal use"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
+"$b * a = a$. Call this assumption $h$. Then $b = 1$."
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
+msgid "blah"
+msgstr ""
+
+#: Game.Levels.GroupWorld.L05_unique_identity
 msgid "Almost there. Just one more property!"
 msgstr ""
 

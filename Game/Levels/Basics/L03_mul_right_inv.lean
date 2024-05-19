@@ -1,9 +1,9 @@
 import GameServer.Commands
 
-import Game.Levels.GroupWorld.L06_inv_inv
+import Game.Levels.Basics.L02_inv_inv
 
-World "GroupWorld"
-Level 7
+World "Basics"
+Level 3
 Title "Right inverse"
 
 Introduction "
@@ -31,7 +31,7 @@ variable {G : Type} [Group G]
 
 This is right inverse property
 -/
-TheoremDoc MyGroup.mul_right_inv as "mul_right_inv" in "GroupWorld"
+TheoremDoc MyGroup.mul_right_inv as "mul_right_inv" in "Basics"
 
 /-- Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$. -/
 Statement mul_right_inv (a : G) : a * a⁻¹ = 1 := by

@@ -1,9 +1,9 @@
 import GameServer.Commands
 
-import Game.Levels.GroupWorld.L05_unique_identity
+import Game.Levels.Basics.L01_unique_identity
 
-World "GroupWorld"
-Level 6
+World "Basics"
+Level 2
 Title "Inverse of inverse"
 
 Introduction "
@@ -29,7 +29,7 @@ variable {G : Type} [Group G]
 
 This is uniqueness of (left) identity in a group.
 -/
-TheoremDoc MyGroup.inv_inv as "inv_inv" in "GroupWorld"
+TheoremDoc MyGroup.inv_inv as "inv_inv" in "Basics"
 
 /-- For every eleement $a$ in a group $G$, we have $(a^{-1})^{-1} = a$. -/
 Statement inv_inv (a : G) : a⁻¹⁻¹ = a := by

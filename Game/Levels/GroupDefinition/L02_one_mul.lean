@@ -2,7 +2,7 @@ import GameServer.Commands
 
 import Game.MyGroup.Definition
 
-World "GroupWorld"
+World "GroupDefinition"
 Level 2
 Title "Multiplicative identity on the left"
 

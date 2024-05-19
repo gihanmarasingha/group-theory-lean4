@@ -2,7 +2,7 @@ import GameServer.Commands
 
 import Game.MyGroup.Definition
 
-World "GroupWorld"
+World "GroupDefinition"
 Level 3
 Title "Multiplicative associativity"
 

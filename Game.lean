@@ -1,7 +1,8 @@
 import GameServer.Commands
 
 -- import all worlds
-import Game.Levels.GroupWorld
+import Game.Levels.GroupDefinition
+import Game.Levels.Basics
 
 Title "LMS Education Day Lean Game Example"
 
@@ -10,9 +11,9 @@ Introduction "
 
 ## Group theory
 
-This simple Lean game example contains one 'world', exploring ideas in group theory.
+This simple Lean game example explores ideas in group theory.
 
-Please click the blue circle on the right of this pane to start.
+Please click the larger blue disc on the right of this pane to start.
 "
 
 Info "

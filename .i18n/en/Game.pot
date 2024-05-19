@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun May 19 17:21:00 2024\n"
+"POT-Creation-Date: Sun May 19 20:04:49 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,20 +20,23 @@ msgstr ""
 msgid "intermediate goal solved! 🎉"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "Multiplicative identity"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "A group $G$ is a set together with an operation $*$ and a distinguished element $1$, not\n"
 "necessarily the same as the natural number $1$, that satisfies certain properties. We'll introduce\n"
 "these properties in the next few levels. The first property, called `mul_one` asserts that\n"
 "$a * 1 = a$.\n"
 "\n"
-"To complete this level, just enter `rw [mul_one]` in the box in the middle pane."
+"To complete this level, just enter `rw [mul_one]` in the box in the middle pane.\n"
+"\n"
+"*Note* `rw` is am abbreviation for the `rewrite` tactic. We use it to rewrite the target\n"
+"`a * 1 = a` to the target `a = a` and thereby complete the proof."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "`rw` is used to rewrite the target or a hypothesis\n"
 "\n"
 "If `h` is the name of a theorem `rw [h]` rewrites the target using `h`. For example, if `h` is\n"
@@ -41,124 +44,134 @@ msgid "`rw` is used to rewrite the target or a hypothesis\n"
 "`b`."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "`mul_one` is a proof that `a * 1 = a`"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "Let $a$ be an element of $G$. Show that $a * 1 = a$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "Enter `rw [mul_one]` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L01_mul_one
+#: Game.Levels.GroupDefinition.L01_mul_one
 msgid "Great, you've just used the right identity property of groups. We'll learn the left identity property\n"
 "in the next level."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "Multiplicative identity on the left"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "In the previous level, we saw that $a * 1 = a$ for every $a$ in a group $G$. In this level, we\n"
 "introduce the property that $1 * a = a$, for every $a$ in $G$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "`one_mul` is a proof that `1 * a = a`"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "Let $a$ be an element of $G$. Show that $1 * (a * 1) = a$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "Enter `rw [mul_one]` or `rw [one_mul]` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "Enter `rw [one_mul]` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "Enter `rw [mul_one]` in the text box and press \"Execute\"."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L02_one_mul
+#: Game.Levels.GroupDefinition.L02_one_mul
 msgid "I asked you to perform rewrites on two separate lines. But these rewrites can be combined on one\n"
 "line as `rw [mul_one, one_mul]`.\n"
 "\n"
 "In the next level, we'll learn another property of groups."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "Multiplicative associativity"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "Brackets can be shifted in a group. This property is called associativity. In Lean, `mul_assoc`\n"
 "is the theorem that $(a*b)*c = a*(b*c)$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "`mul_assoc` is a proof that `(a * b) * c = a * (b * c)`\n"
 "\n"
 "Note that Lean will write `(a * b) * c` as `a * b * c` to minimise the use of brackets."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "Let $a, b, c$ be elements of $G$. Show that $(a * b) * (b * c) = (a * (b * b)) * c$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "You'll need several rewrites, which can be done all on one line."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L03_mul_assoc
+#: Game.Levels.GroupDefinition.L03_mul_assoc
 msgid "Almost there. Just one more property!"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "Left inverse"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "The left inverse $a^{-1}$ of a group element $a$ satisfies the property that $a^{-1} * a = 1$.\n"
 "This property is `mul_left_inv`, the left multiplicative inverse.\n"
 "\n"
 "*Note* to enter `⁻¹` in Lean, type `\\-1`."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "`mul_left_inv` is a proof that `a⁻¹ * a = 1`"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "Let $a, b, c$ be elements of $G$. Show that $(a^{-1} * (b^{-1} * b)) * a = 1 $."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "Try rewriting with `mul_left_inv`"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an\n"
 "appropriate multiplicative identity rule"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L04_mul_left_inv
+#: Game.Levels.GroupDefinition.L04_mul_left_inv
 msgid "Excellent. You've now seen all the defining properties of a group. In future levels, we'll build\n"
 "on these properties to prove more results."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.GroupDefinition
+msgid "Group Definition"
+msgstr ""
+
+#: Game.Levels.GroupDefinition
+msgid "In this world, we introduce the definition of a group.\n"
+"\n"
+"Click on \"Start\" below to begin."
+msgstr ""
+
+#: Game.Levels.Basics.L01_unique_identity
 msgid "Uniqueness of identity"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "We'll show that the identity is unique. That is, we'll prove:\n"
 "\n"
 "**Theorem** Suppose $b$ is an element of $G$ such that $b * a = a$,\n"
@@ -181,39 +194,39 @@ msgid "We'll show that the identity is unique. That is, we'll prove:\n"
 "*Note* to rewrite with the hypothesis `h`, use `rw [h]`."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "`calc` is used to write a 'calculation-style' proof"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "`Template` for internal use"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "`Hole` for internal use"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "`eq_one_of_self_mul_eq (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
 "`h :  ∀ (a : G), b * a = a`.\n"
 "\n"
 "This is uniqueness of (left) identity in a group."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that\n"
 "$b * a = a$. Call this assumption $h$. Then $b = 1$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L05_unique_identity
+#: Game.Levels.Basics.L01_unique_identity
 msgid "Well done!"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L06_inv_inv
+#: Game.Levels.Basics.L02_inv_inv
 msgid "Inverse of inverse"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L06_inv_inv
+#: Game.Levels.Basics.L02_inv_inv
 msgid "In this level, you'll use a `calc` proof to show $(a^{-1})^{-1} = a$, for every\n"
 "$a$ in a group $G$.\n"
 "\n"
@@ -224,26 +237,26 @@ msgid "In this level, you'll use a `calc` proof to show $(a^{-1})^{-1} = a$, for
 "and `expr` is some mathematical expression."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L06_inv_inv
+#: Game.Levels.Basics.L02_inv_inv
 msgid "`inv_inv (b : G) h` is the proof of `b = 1` if `h` is the hypothesis\n"
 "`h :  ∀ (a : G), b * a = a`.\n"
 "\n"
 "This is uniqueness of (left) identity in a group."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L06_inv_inv
+#: Game.Levels.Basics.L02_inv_inv
 msgid "For every eleement $a$ in a group $G$, we have $(a^{-1})^{-1} = a$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L06_inv_inv
+#: Game.Levels.Basics.L02_inv_inv
 msgid "Excellent!"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L07_mul_right_inv
+#: Game.Levels.Basics.L03_mul_right_inv
 msgid "Right inverse"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L07_mul_right_inv
+#: Game.Levels.Basics.L03_mul_right_inv
 msgid "We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a^{-1} = 1$.\n"
 "\n"
 "Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
@@ -256,27 +269,26 @@ msgid "We've seen that $a^{-1} * a = 1$. In this level, you'll prove that $a * a
 "```"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L07_mul_right_inv
+#: Game.Levels.Basics.L03_mul_right_inv
 msgid "`mul_right_inv (a : G)` is the proof that `a * a⁻¹ = 1`.\n"
 "\n"
 "This is right inverse property"
 msgstr ""
 
-#: Game.Levels.GroupWorld.L07_mul_right_inv
+#: Game.Levels.Basics.L03_mul_right_inv
 msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
 msgstr ""
 
-#: Game.Levels.GroupWorld.L07_mul_right_inv
+#: Game.Levels.Basics.L03_mul_right_inv
 msgid "Excellent!"
 msgstr ""
 
-#: Game.Levels.GroupWorld
-msgid "Group Theory World"
+#: Game.Levels.Basics
+msgid "Group Basics"
 msgstr ""
 
-#: Game.Levels.GroupWorld
-msgid "This game contains only one world, the Group Theory World. You'll use calculation-style\n"
-"proofs to build simple results in group theory.\n"
+#: Game.Levels.Basics
+msgid "We introduce calculation-style proofs and use them to demonstrate some basic group properties.\n"
 "\n"
 "Click on \"Start\" below to begin."
 msgstr ""
@@ -290,9 +302,9 @@ msgid "# Welcome to this Lean example\n"
 "\n"
 "## Group theory\n"
 "\n"
-"This simple Lean game example contains one 'world', exploring ideas in group theory.\n"
+"This simple Lean game example explores ideas in group theory.\n"
 "\n"
-"Please click the blue circle on the right of this pane to start."
+"Please click the larger blue disc on the right of this pane to start."
 msgstr ""
 
 #: Game

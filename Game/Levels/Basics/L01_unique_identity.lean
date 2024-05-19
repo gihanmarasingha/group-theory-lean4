@@ -2,8 +2,8 @@ import GameServer.Commands
 
 import Game.MyGroup.Definition
 
-World "GroupWorld"
-Level 5
+World "Basics"
+Level 1
 Title "Uniqueness of identity"
 
 Introduction "
@@ -58,7 +58,7 @@ variable {G : Type} [Group G]
 
 This is uniqueness of (left) identity in a group.
 -/
-TheoremDoc MyGroup.eq_one_of_self_mul_eq as "eq_one_of_self_mul_eq" in "GroupWorld"
+TheoremDoc MyGroup.eq_one_of_self_mul_eq as "eq_one_of_self_mul_eq" in "Basics"
 
 /-- Let $b$ be an element of a group $G$. Suppose for every $a$ in $G$, that
 $b * a = a$. Call this assumption $h$. Then $b = 1$. -/

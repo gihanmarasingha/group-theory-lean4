@@ -3,7 +3,7 @@ import Game.Metadata
 
 import Game.MyGroup.Definition
 
-World "GroupWorld"
+World "GroupDefinition"
 Level 1
 Title "Multiplicative identity"
 
@@ -14,6 +14,9 @@ these properties in the next few levels. The first property, called `mul_one` as
 $a * 1 = a$.
 
 To complete this level, just enter `rw [mul_one]` in the box in the middle pane.
+
+*Note* `rw` is am abbreviation for the `rewrite` tactic. We use it to rewrite the target
+`a * 1 = a` to the target `a = a` and thereby complete the proof.
 "
 
 /-- `rw` is used to rewrite the target or a hypothesis

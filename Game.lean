@@ -1,28 +1,24 @@
-import Game.Levels.DemoWorld
+import GameServer.Commands
 
--- Here's what we'll put on the title screen
-Title "Hello World Game"
-Introduction
-"
-This text appears on the starting page where one selects the world/level to play.
-You can use markdown.
+-- import all worlds
+import Game.Levels.GroupWorld
+
+Title "LMS Education Day Lean Game Example"
+
+Introduction "
+# Welcome to this Lean example
+
+## Group theory
+
+This simple Lean game example contains one 'world', exploring ideas in group theory.
+
+Please click the blue circle on the right of this pane to start.
 "
 
 Info "
-Here you can put additional information about the game. It is accessible
-from the starting through the drop-down menu.
-
-For example: Game version, Credits, Link to Github and Zulip, etc.
-
-Use markdown.
+Developed by Gihan Marasingha using the Lean 4 game engine at HHU.
 "
 
-/-! Information to be displayed on the servers landing page. -/
-Languages "English"
-CaptionShort "Game Template"
-CaptionLong "You should use this game as a template for your own game and add your own levels."
--- Prerequisites "" -- add this if your game depends on other games
--- CoverImage "images/cover.png"
+-- Dependency World₁ → World₂ -- because of `≠`
 
-/-! Build the game. Show's warnings if it found a problem with your game. -/
 MakeGame

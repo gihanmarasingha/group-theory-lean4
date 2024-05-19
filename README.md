@@ -1,11 +1,7 @@
-# Game Skeleton
+# LMS Education Day Lean demonstration
 
-This is a template for creating a game with [lean4game](https://github.com/leanprover-community/lean4game/). It contains a single Level plus the files needed for a local development setup.
+This is a demonstration of the [lean4game](https://github.com/leanprover-community/lean4game/) engine, designed for the LMS Education Day 22 May 2024.
 
-The documentation about how to use this template are at the [lean4game repository](https://github.com/leanprover-community/lean4game/):
+This game consists of a single world and introduces basic ideas in group theory.
 
-* [Creating a new game](https://github.com/leanprover-community/lean4game/blob/main/doc/create_game.md)
-  * [Updating an existing game](https://github.com/leanprover-community/lean4game/blob/main/doc/update_game.md)
-  * [Running a game locally](https://github.com/leanprover-community/lean4game/blob/main/doc/running_locally.md)
-
-
+Presented at the LMS Education Day by Gihan Marasingha and Athina Thoma.

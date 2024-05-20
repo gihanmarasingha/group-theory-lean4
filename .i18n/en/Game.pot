@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.7.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sun May 19 20:04:49 2024\n"
+"POT-Creation-Date: Mon May 20 18:27:50 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -153,8 +153,9 @@ msgid "Remember when Lean writes `x * y * z`, it means `(x * y) * z`. Now use an
 msgstr ""
 
 #: Game.Levels.GroupDefinition.L04_mul_left_inv
-msgid "Excellent. You've now seen all the defining properties of a group. In future levels, we'll build\n"
-"on these properties to prove more results."
+msgid "Excellent. You've now seen all the defining properties of a group.\n"
+"Click \"Leave World\" below to leave the Group Definition world and move on to the\n"
+"next world."
 msgstr ""
 
 #: Game.Levels.GroupDefinition
@@ -280,6 +281,42 @@ msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
 msgstr ""
 
 #: Game.Levels.Basics.L03_mul_right_inv
+msgid "Excellent!"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "Uniqueness of inverse"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "In a previous level, you showed uniqueness of identity. Now we will show uniqueness of inverses.\n"
+"\n"
+"That is, you've prove that if $a * b = 1$ then $a^{-1} = b$.\n"
+"\n"
+"Below is a template proof. Replace the `sorry` in the editor pane with this template.\n"
+"To complete the proof, fill in the `sorry` placeholders.\n"
+"\n"
+"```\n"
+"calc\n"
+"  a⁻¹ = sorry   := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ =  sorry    := by sorry\n"
+"  _ = b         := by sorry\n"
+"```"
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "`inv_eq_of_mul_eq_one (h : a * b = 1)` is the proof that `a⁻¹ = b`.\n"
+"\n"
+"This is the uniqueness of inverses."
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
+msgid "Let $a$ be an element of a group $G$. Then $a * a^{-1} = 1$."
+msgstr ""
+
+#: Game.Levels.Basics.L04_unique_inverse
 msgid "Excellent!"
 msgstr ""
 

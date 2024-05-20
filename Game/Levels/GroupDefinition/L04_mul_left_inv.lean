@@ -35,8 +35,9 @@ Statement (a b : G) : (a⁻¹ * (b⁻¹ * b)) * a = 1 := by
   rw [mul_left_inv]
 
 Conclusion "
-Excellent. You've now seen all the defining properties of a group. In future levels, we'll build
-on these properties to prove more results.
+Excellent. You've now seen all the defining properties of a group.
+Click \"Leave World\" below to leave the Group Definition world and move on to the
+next world.
 "
 
 end MyGroup

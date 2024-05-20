@@ -17,7 +17,6 @@ calc
   a * a⁻¹ = sorry   := by sorry
   _ = 1         := by sorry
 ```
-
 "
 
 namespace MyGroup
